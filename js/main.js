@@ -8,7 +8,7 @@
 
     let startTime;
     let timeoutId;
-    let elapsedTime = 0;
+    let elapsedTime = 1;
     function countUp() {
         const d = new Date(Date.now() - startTime + elapsedTime);
         const m = String (d.getMinutes()).padStart(2,'0');
@@ -19,17 +19,17 @@
             countUp();     
         },10);
     }
-    function setButuonStateInitial(){
+    function setButuonStateInitial()　{
         start.disabled = false;
         stop.disabled = true;
         reset.disabled = true;
     }
-    function setButuonStateRunning(){
+    function setButuonStateRunning()　{　
         start.disabled = true;
         stop.disabled = false;
         reset.disabled = true;
     }
-    function setButuonStateStopped(){
+    function setButuonStateStopped()　{
         start.disabled = false;
         stop.disabled = true;
         reset.disabled = false;
